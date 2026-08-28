@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcane Wand</title>
+
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 28px;
+      padding: 20px 40px;
+      border-radius: 20px;
+      border: none;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🪄 ARCANE WAND 🪄</h1>
+
+  <p>The wand has chosen...</p>
+
+  <button onclick="castSpell()">⚡ CAST SPELL ⚡</button>
+
+  <audio id="spellSound" src="spell.mp3"></audio>
+
+  <script>
+    function castSpell() {
+      document.getElementById("spellSound").play();
+    }
+  </script>
+
+</body>
+</html>
